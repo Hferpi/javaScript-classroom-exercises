@@ -159,7 +159,7 @@ if (numero % 2 == 0) {
 
 
 //--------------ejercicio 13 Añadir al ejercicio anterior que nos diga por cual de los cuatro es divisible (hay que decir todos por los que es divisible)-------------------
-
+/*
 
 let numero = parseInt(prompt())
 let divisores = [2, 3, 5, 7]
@@ -176,3 +176,37 @@ for (let divisor of divisores){
 
 
 console.log (esDivisiblePor.length === 0 ? `No es divisible por ningun numero ${divisores}` : `Es divisible por ${esDivisiblePor.join(", ")}`)
+*/
+
+
+
+//--------------ejercicio 14 Escribe todos los divisores de un numero -------------------
+/*
+let numero = parseInt(prompt())
+let divisores = []
+for (let i = 2; i <= numero ; i++){
+    if(numero % i == 0){
+        console.log("El número "+i+" es divisible de "+numero+"\n")
+        divisores.push(i)
+    }
+}
+
+console.log(divisores)
+*/
+
+
+
+
+//--------------ejercicio 15 Escribe todos los divisores de un numero -------------------
+
+let numero=parseInt(prompt())
+let esPrimo = true;
+
+for (let i = 2; i< numero; i++){
+if(numero % i == 0){
+esPrimo= false
+break
+}
+}
+
+console.log(esPrimo ? "El numero "+numero+" es primo" : numero+ " no es primo")
