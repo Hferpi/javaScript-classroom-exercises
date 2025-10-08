@@ -21,8 +21,18 @@ El proyecto utiliza **Tailwind CSS** para estilizar los elementos.
 Si aún no lo tienes instalado, puedes hacerlo fácilmente desde la terminal con los siguientes comandos:
 
 ```bash
-npm install -D tailwindcss
-npx tailwindcss init
+npm install tailwindcss @tailwindcss/cli
+```
+Se usa en input.css
+```bash
+@import "tailwindcss";
+```
+
+Comando para iniciar el CLI
+```bash
+npx @tailwindcss/cli -i input.css -o output.css --watch
+```
+lo suyo seria ponerlo en la carpeta /src
 
 ## ⚙️ Funcionamiento
 
