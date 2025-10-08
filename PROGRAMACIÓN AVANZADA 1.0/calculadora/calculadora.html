@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="text-3xl">
+    <div id="background-mask" class="min-h-screen w-full justify-center items-center flex ">
+        <div class="w-[500px] bg-gray-700 rounded-3xl p-3 m-10">
+            <h5 class="left-1 text-white m-1.5">CASIO</h5>
+            <div class="grid grid-cols-3 gap-1">
+                <span class="col-span-2 p-6 m-2 rounded-3xl bg-gray-400 overflow-hidden" id="recuadro"></span>
+                <div class="flex flex-col bg-gray-400 rounded-3xl m-2">
+                    <button class=" rounded-t-3xl hover:bg-gray-800 p-3" onclick="resetRecuradro()">C</button>
+                    <button class=" rounded-b-3xl hover:bg-gray-800 p-3" onclick="resetNumeros()">AC</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 gap-1.5">
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="1"
+                    onclick="accion(value)">x</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="2"
+                    onclick="accion(value)">/</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="3"
+                    onclick="accion(value)">+</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="4"
+                    onclick="accion(value)">-</button>
+            </div>
+            <div class="grid grid-cols-3 gap-2">
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="1" id="numero"
+                    onclick="getValue(value)">1</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="2" id="numero"
+                    onclick="getValue(value)">2</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="3" id="numero"
+                    onclick="getValue(value)">3</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="4" id="numero"
+                    onclick="getValue(value)">4</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="5" id="numero"
+                    onclick="getValue(value)">5</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="6" id="numero"
+                    onclick="getValue(value)">6</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="7" id="numero"
+                    onclick="getValue(value)">7</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="8" id="numero"
+                    onclick="getValue(value)">8</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="9" id="numero"
+                    onclick="getValue(value)">9</button>
+                <button class="bg-gray-400 p-6 rounded-3xl m-2 hover:bg-gray-800" value="0" id="numero"
+                    onclick="getValue(value)">0</button>
+                <button class="bg-gray-400  p-6 m-2 col-span-2 rounded-3xl  hover:bg-gray-800" value="5"
+                    onclick="accion(value)">=</button>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
+
+<style>
+    #background-mask {
+        background-color: black;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+
+        mask-image: url("/public/casio-logo.svg");
+        mask-position: center 50%;
+        mask-repeat: no-repeat;
+        mask-size: 50px;
+
+        &.unlocked {
+            animation: lock-reveal 3s forwards ease-in-out;
+        }
+    }
+
+    @keyframes lock-reveal {
+        0% {
+            mask-size: 50px;
+        }
+
+        100% {
+            mask-size: 5000vh;
+        }
+    }
+</style>
+
+<script>
+    const backgroundMask = document.getElementById(
+        "background-mask"
+    )
+
+    document.addEventListener("DOMContentLoaded", () => {
+        backgroundMask.classList.add("unlocked")
+    })
+</script>
