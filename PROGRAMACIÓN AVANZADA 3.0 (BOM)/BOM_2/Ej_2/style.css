@@ -1,0 +1,73 @@
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: khaki;
+    align-items: center;
+}
+main{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h4{
+    font-size: large;
+}
+main div {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+main div p{
+    font-size: 100px;
+    color: brown;
+    background-color: black;
+    padding-inline: 40px;
+    border-radius: 100%;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+header button{
+    cursor: pointer;
+    width: 100px;
+    height: 70px;
+}
+header div button{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+}
+
+.rotar {
+    display: inline-block; /* Necesario para que la rotación funcione */
+    animation: girar 2s linear infinite;
+  }
+  
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
