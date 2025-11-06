@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#cuadros {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    width: 400px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#cuadros div {
+    background-color: azure;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+header {
+    padding: 40px;
+    width: 100%;
+    background-color: aqua;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+hr {
+    margin: 20px;
+}
+
+#title {
+    color: chocolate;
+    text-decoration: underline;
+}
+
+progress {
+    width: 200px;
+    height: 30px;
+    appearance: none;
+    border: 2px solid black;
+    border-radius: 3rem;
+
+}
+
+footer {
+    padding: 30px;
+
+}
+
+/* Parte rellena (valor) */
+progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 10px;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+    background-color: #0fe107c9;
+    border-radius: 10px;
+}
+
+
+.cuadroConImagenes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.cuadroConImagenes figure img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+figcaption {
+    height: 15px;
+    margin-top: 10px;
+}
+
+.texto-cursiva {
+    font-family: cursive;
+}
+
+.texto-subrayado {
+    text-decoration: underline;
+}
+
+.texto-upperCase {
+    text-transform: uppercase;
+}
+
+.texto-fontFranklin {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.destacar{
+    font-size: 18px;
+    color:red;
+}

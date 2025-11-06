@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="tituloPagina">Ejercicios del DOM 1.0</h1>
+        <div id="subtitulo" style="text-align:center">Página de muestra de javascript html</div>
+    </header>
+    <section>
+        <h3>Ejercicio 1. Hacer una barra de progreso</h3>
+        <progress min='0' max="100" value="0"></progress>
+        <button onclick="restartProgresBar()">RESTART</button>
+    </section>
+    <hr>
+    <section>
+        <h3>Ejercicio 2. Hola mundo <span id="title"> </span></h3>
+        <button onclick="changeTitle()">CHANGE TITLE</button>
+    </section>
+    <hr>
+    <section>
+        <h3 style="color:black" id="titleColour">Ejercicio 3. Cambiar Color del titulo.</h3>
+        <input type="color" id="colourSelected">
+        <button onclick="changeTitleColour()">CHANGE COLOUR</button>
+    </section>
+    <hr>
+    <section>
+        <h3>Ejercicio 4. Crear &lt;DIVs&gt; dinamicos </h3>
+        <button onclick="createNewDiv()">Add <span class="count"> 1 </span> DIV</button>
+        <div id="cuadros">
+
+        </div>
+        <h3>Ejercicio 5. Quitar &lt;DIVs&gt; dinamicos </h3>
+        <button onclick="removeDiv()">Remove <span class="count"> 1 </span> DIV</button>
+
+    </section>
+    <hr>
+    <section>
+        <h3>Ejercico 6. Poner el valor alt de pie de foto</h3>
+        <div class="cuadroConImagenes">
+            <figure onclick="ponerPiedeFoto(this)">
+                <img src="./imagenes/javaScript.png" alt="Imagen de JavaScript">
+                <figcaption></figcaption>
+            </figure>
+            <figure onclick="ponerPiedeFoto(this)">
+                <img src="./imagenes/html.png" alt="Esta imagen es de HTML">
+                <figcaption></figcaption>
+            </figure>
+            <figure onclick="ponerPiedeFoto(this)">
+                <img src="./imagenes/css.png" alt="Esta imagen es de CSS">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h3>Ejercicio 7. Script que muestre las fuentes de las imágenes de la página.</h3>
+        <div id="fuentes">
+
+        </div>
+        <button id="botonFuentes" onclick="cargarFuentes(this)">Fuentes</button>
+    </section>
+    <hr>
+    <section>
+        <h3>Ejercicio 8. Cambiar etiqueta Class del encabezado</h3>
+        <button onclick="cambiarClasse()">Cambiar titulo</button>
+    </section>
+    <hr>
+    <section>
+        <h3>Ejercicio 9. Añair &lt;DIV&gt;</h3>
+        <button onclick="anadirDebajoTitulo()">Añadir debajo titulo</button>
+    </section>
+    <hr>
+    <section>
+        <h3>Ejercicio 10. Esconder - mostrar botones</h3>
+        <button onclick="esconderMostrarBotones(this)">Ocultar</button>
+    </section>
+    <hr>
+    <footer>
+        <p>© 2025 Hferpi | web para practicar JavaScript</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
