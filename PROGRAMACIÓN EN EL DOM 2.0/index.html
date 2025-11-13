@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="tituloPagina">Ejercicios del DOM 1.0</h1>
+    </header>
+    <hr>
+    <hero>
+        <h3>Ejercicio 1. </h3>
+        <div id="divisor">
+            <p id="primerParrafo">Este es mi primer párrafo</p>
+        </div>
+        <section class="botones">
+            <button onclick="addP()">Añadir párrafo</button>
+            <button id="insertarP" onclick="insetP()">Insertar párrafo</button>
+            <button onclick="replaceP()">Reemplazar párrafo</button>
+            <button onclick="deletP()">Borrar párrafo</button>
+            <button onclick="cloneDiv()">Clonar div</button>
+        </section>
+        <hr>
+        <h3>Ejercicio 2. Manipular una lista</h3>
+        <div id="contenedorLista">
+            <ul id="lista">
+                <li id="primerElementoLista">Leon</li>
+                <li>Pantera</li>
+                <li>Jirafa</li>
+            </ul>
+        </div>
+        <section class="botones">
+            <button onclick="addList()">Añadir a la lista</button>
+            <button id="insertarL" onclick="insertList()">Insertar a la lista</button>
+            <button onclick="replaceList()">Reemplazar elemento lista</button>
+            <button onclick="deletList()">Borrar primer elemento de la lista</button>
+            <button onclick="cloneList()">Clonar lista</button>
+            <button onclick="createSublistDOM()">Crear sublista con DOM</button>
+            <button onclick="createSublistinner()">Crear sublista con innerHTML</button>
+        </section>
+        <hr>
+
+        <h3>Ejercicio 3. Manipular bg color</h3>
+        <div class="cuadrado">
+
+        </div>
+       <input id="colourSelected" type="color">
+       <button onclick="changeColour()">Cambiar color</button>
+       <hr>
+
+       <h3>Ejercicio 4. Imagenes</h3>
+       <section >
+        <img style="width: 350px;" src="./images/graffiti1.png" alt="graffiti 1">
+        <img style="width: 350px;"src="./images/graffiti2.png" alt="graffiti 2">
+        <img style="width: 350px;" src="./images/graffiti3.png" alt="graffiti 3">
+        <img style="width: 350px;" src="./images/graffiti4.png" alt="graffiti 4">
+       </section>
+       <button onclick="countNumberImg()">Numero de imagenes</button>
+       <hr>
+    </hero>
+
+    <hr>
+    <footer>
+        <p>© 2025 Hferpi | web para practicar JavaScript</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
