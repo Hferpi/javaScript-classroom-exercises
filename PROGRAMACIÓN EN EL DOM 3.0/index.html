@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="tituloPagina">Ejercicios del DOM 3.0</h1>
+    </header>
+    <hr>
+    <hero class="hero">
+        <h3>Ejercicio 1. Hipervinculo con alert</h3>
+
+        <p>No olvides darle ⭐ <a onMouseOver="alert('Estas encima de un enlace')" href="https://github.com/Hferpi"> al
+                repositorio</a></p>
+        <hr>
+
+        <h3>Ejercicio 2. Poner DNI y confirmar datos</h3>
+        <form>
+            <p id="textoDNI">Pon tu DNI valido</p>
+            <input type="text" placeholder="00000000N" id="dni">
+            <button onclick="validarDNI()">Enviar</button>
+        </form>
+        <hr>
+
+        <h3>Ejercicio 3. Añadir 10 puntos restart o quitar 10 puntos</h3>
+        <div id="marcador">0000</div>
+        <div>
+            <button style="background-color: rgba(19, 222, 16, 0.73); border-radius: 10px;" value="10"
+                onclick="cambiarMarcador(value)">+ 10</button>
+            <button style="background-color: gray; border-radius: 30px;" value="0"
+                onclick="cambiarMarcador(value)">Restart</button>
+            <button style="background-color: rgba(205, 28, 28, 0.694); border-radius: 10px;" value="-10"
+                onclick="cambiarMarcador(value)">- 10</button>
+        </div>
+        <hr>
+
+        <h3>Ejercicio 4. Adivina el numero random del 0 al 10</h3>
+        <p id="textoNumeroAleatorio"></p>
+        <div id="marcadorNumeroAleatorio">?</div>
+        <div>
+            <input type="number" id="numeroElegido" min="0" max="10">
+            <button onclick="enviarNumero()">Prueba suerte</button>
+        </div>
+        <hr>
+
+        <h3>Ejercicio 5. Abrir una nueva ventana pasado 20"</h3>
+        <div>
+            <h1 class="tituloDesplegable">Abre la seccion <img id="imgDesplegar" src="./images/desplegable.webp" onclick="abrirCerrar()" alt="deplegar"></h1>
+            <div class="cajonDesplegable"><h4>Bienvenvi@ espera 10 segundos</h4>
+            <p id="contador"></p>
+            </div>
+        </div>
+            <hr>
+
+        <h3>Ejercicio 6. Playground // <span style="color: yellow; background-color: rgba(185, 183, 177, 0.747); padding: 10px; border-radius: 10px;">⚠️FUNCIION eval()⚠️</span>!</h3>
+        <div class="consola">
+        <textarea id="editor">2+2</textarea>
+        <button onclick="runCode()">Ejecutar</button>
+        <pre id="salida"></pre>
+</div>
+
+    </hero>
+
+    <hr>
+    <footer>
+        <p>© 2025 Hferpi | web para practicar JavaScript</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

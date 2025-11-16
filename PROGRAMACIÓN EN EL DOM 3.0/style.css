@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    text-align: center;
+
+}
+hr{
+    width: 100%;
+}
+
+header {
+    padding: 40px;
+    width: 100%;
+    background-color: aqua;
+    align-items: center;
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 30px;
+
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#marcador, #marcadorNumeroAleatorio{
+    width: 100px;
+    height: 80px;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 30px;
+    align-content: center;
+}
+
+
+input{
+    padding: 10px;
+}
+
+#imgDesplegar{
+    width: 30px;
+    cursor: pointer;
+    
+}
+.tituloDesplegable{
+    background-color: cornflowerblue;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 6px;
+}
+.cajonDesplegable{
+    width: 303px;
+    height: 100px;
+    background-color: azure;
+    display: none;
+}
+
+.consola{
+    width: 100%;   
+    display: flex;
+    justify-content: space-around;
+}
+
+.consola pre, .consola textarea{
+    background-color: gray;
+    padding: 20px;
+    width: 40%;
+    height: 150px;
+    border-radius: 10px;
+    color: white;
+}
+
+.consola textarea{
+      background-color: rgb(43, 42, 42);
+}
